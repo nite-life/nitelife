@@ -114,7 +114,7 @@ function change() {
 <form name="playerCtrl"><input type="button" value="Stop-Resume" name="playOrPause" onclick="handlePlayOrPauseClick()" class="c4"> <input type="button" value="Hide-Show" name="controls" onclick="handleControlsOnOffClick()" class="c4"><br>
 <br>
 <script>
-  with (document) {writeln('<SELECT NAME="streams" onChange="change()" style="font-family:arial; font-size:10px; background-color:#000000; color:#6B428C; border:2px inset Transparent">'); for (var i = 0; i < streams.length; i++) {writeln('<OPTION VALUE="', streams[i].url, '">', streams[i].name);}writeln('<\/SELECT>');
+  with (document) {writeln('<SELECT ID="streams" onChange="change()" style="font-family:arial; font-size:10px; background-color:#000000; color:#6B428C; border:2px inset Transparent">'); for (var i = 0; i < streams.length; i++) {writeln('<OPTION VALUE="', streams[i].url, '">', streams[i].name);}writeln('<\/SELECT>');
          }
 </script></form>
 <br>
